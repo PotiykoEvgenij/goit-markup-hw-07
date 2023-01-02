@@ -857,23 +857,10 @@ footer {
         fill: #ffffff;
     }
     
-    /* .ico-close-mobile-menu {
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        fill: 000000;
-
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    } */
-    .button-close-mobile-menu {
+    .button-mobile-menu .ico-close-mobile-menu{
         display: none;
     }
-    .button-mobile-menu.is-open .button-close-mobile-menu{
+    .button-mobile-menu.is-open .ico-close-mobile-menu{
         display: block;
     }
 
