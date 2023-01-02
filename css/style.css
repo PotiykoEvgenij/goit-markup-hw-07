@@ -54,14 +54,16 @@ img {
     overflow: hidden;
 }
 .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    min-width: 360px;
+    padding: 96px 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 @media screen and (min-width:480px) {
     .container {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
+        min-width: 428px;
     }
 
 }
@@ -74,8 +76,7 @@ img {
 @media screen and (min-width:1440px) {
     .container {
         width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 120px 15px;
     }
 }
 
@@ -110,6 +111,12 @@ img {
 
 /* Nav */
 
+.top-line {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .top-line-bg {
     margin-left: auto;
     margin-right: auto;
@@ -775,8 +782,8 @@ footer {
 
     .customers {
         width: 190px;
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -789,7 +796,7 @@ footer {
     }
 }
 
-@media (min-width:428px) and (max-width:768px) {
+@media screen and (min-width:428px) {
         /* Section Customers */
 
     .customers {
