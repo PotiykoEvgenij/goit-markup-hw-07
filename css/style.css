@@ -776,12 +776,17 @@ footer {
     .customers {
         width: 190px;
 <<<<<<< HEAD
+<<<<<<< HEAD
         display: flex;
         flex-direction: column;
 =======
         /* display: flex;
         flex-direction: column; */
 >>>>>>> parent of 88e88ef (Update style.css)
+=======
+        display: flex;
+        flex-direction: column;
+>>>>>>> parent of 57aa262 (Update style.css)
         margin-left: auto;
         margin-right: auto;
     }
