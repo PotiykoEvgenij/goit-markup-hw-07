@@ -829,7 +829,7 @@ footer {
         position: absolute;
         background-color: #FFFFFF;
     }
-    .mobile-menu {
+    .ico-mobile-menu {
         width: 32px;
         height: 22px;
         fill: var(--caption-color);
@@ -857,11 +857,14 @@ footer {
         fill: #ffffff;
     }
     
-    .button-mobile-menu .ico-close-mobile-menu{
+    .button-mobile-menu .ico-close-mobile-menu {
         display: none;
     }
-    .button-mobile-menu.is-open .ico-close-mobile-menu{
+    .button-mobile-menu.is-open .ico-close-mobile-menu {
         display: block;
+    }
+    .button-mobile-menu.is-open .ico-mobile-menu {
+        display: none;
     }
 
          /* Section1 */
