@@ -821,6 +821,9 @@ footer {
     .contacts {
         display: none;
     }
+
+  /* Mobile menu */
+
     .button-mobile-menu {
         border: none;
         padding: 0;
@@ -857,7 +860,7 @@ footer {
         fill: #ffffff;
     }
     
-    .button-mobile-menu .ico-close-mobile-menu {
+    /* .button-mobile-menu .ico-close-mobile-menu {
         display: none;
     }
     .button-mobile-menu.is-open .ico-close-mobile-menu {
@@ -865,7 +868,7 @@ footer {
     }
     .button-mobile-menu.is-open .ico-mobile-menu {
         display: none;
-    }
+    } */
 
          /* Section1 */
 
@@ -874,6 +877,9 @@ footer {
     }
 }
 @media screen and (min-width:768px) {
+    .mobile-menu {
+        display: none;
+    }
     .button-mobile-menu {
         display: none;
     }
