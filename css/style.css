@@ -775,11 +775,8 @@ footer {
 
     .customers {
         width: 190px;
-<<<<<<< HEAD
-=======
         display: flex;
         flex-direction: column;
->>>>>>> parent of 57aa262 (Update style.css)
         margin-left: auto;
         margin-right: auto;
     }
@@ -858,17 +855,7 @@ footer {
         fill: #ffffff;
     }
     
-    /* .button-mobile-menu .ico-close-mobile-menu {
-        display: none;
-    }
-    .button-mobile-menu.is-open .ico-close-mobile-menu {
-        display: block;
-    }
-    .button-mobile-menu.is-open .ico-mobile-menu {
-        display: none;
-    } */
-
-         /* Section1 */
+           /* Section1 */
 
     .bg-icon-direction {
         display: none;
