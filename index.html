@@ -13,6 +13,72 @@
 </head>
 <body>
     <header>
+        <button type="button" class="mobile-menu-open js-open-menu" class="menu-toggle js-open-menu" aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg class="mobile-menu-open-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu js-menu-container">
+            <div class="conteiner mobile-menu-conteiner">
+                <button class="mobile-menu-close-btn menu-toggle js-close-menu">
+                    <svg class="mobile-menu-close-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-header-list">
+                    <li class="mobile-menu-item">
+                        <a class="link-mobile-menu-item" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="link-mobile-menu-item" href="./porfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a class="link-mobile-menu-item" href="">Contacts</a>
+                    </li>
+                </ul>
+                <div class="mobile-list-header">
+                    <ul class="mobile-phone-mail">
+                        <li class="">
+                            <a class="link phone" href="tel:+110001111111">+11 000 111 11 11</a>
+                        </li>
+                        <li class="t">
+                            <a class="link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="sociai-list-mobile list">
+                        <li class="social-list-item-mobile">
+                            <a href="" class="socil-list-link-mobile">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/sprite.svg.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item-mobile">
+                            <a href="" class="socil-list-link-mobile">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/sprite.svg.svg#icon-twiter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item-mobile">
+                            <a href="" class="socil-list-link-mobile">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/sprite.svg.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list-item-mobile">
+                            <a href="" class="socil-list-link-mobile">
+                                <svg class="social-list-icon" width="24" height="24">
+                                    <use href="./images/sprite.svg.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- Top line -->
         <div class="container top-line">
             <nav class="nav">
@@ -29,15 +95,17 @@
                 <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
                 <li><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
             </ul>
+        </div>
                 <!-- Header -->
         <section class="background-header">
                 <div class="container header">
                     <h1 class="header-title">
                         Effective Solutions for Your Business
                     </h1>
-                    <button type="button" class="button">Order Service</button>
+                    <button type="button" class="button" data-modal-open>Order Service</button>
                 </div>
         </section>
+        </div>
     </header>
     <main>
         <!-- Section1 -->
@@ -45,7 +113,7 @@
             <div class="container">
                 <h2 class="hidden-title">Direction</h2>
                 <ul class="direction-list">
-                    <li>
+                    <li class="direction-box">
                         <div class="bg-icon-direction">
                             <svg class="icon-direction">
                                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -56,7 +124,7 @@
                             Our goal is to identify the business problem to walk away with the perfect and creative solution.
                         </p>
                     </li>
-                    <li>
+                    <li class="direction-box">
                         <div class="bg-icon-direction">
                             <svg class="icon-direction">
                                 <use href="./images/icons.svg#icon-clock"></use>
@@ -67,7 +135,7 @@
                             Bring the key message to the brand's audience for the best price within the shortest possible time.
                         </p>
                     </li>
-                    <li>
+                    <li class="direction-box">
                         <div class="bg-icon-direction">
                             <svg class="icon-direction">
                                 <use href="./images/icons.svg#icon-diagram"></use>
@@ -78,7 +146,7 @@
                             Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
                         </p>
                     </li>
-                    <li>
+                    <li class="direction-box">
                         <div class="bg-icon-direction">
                             <svg class="icon-direction">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
@@ -98,13 +166,22 @@
                 <h2 class="section-title">What are we doing</h2>
                 <ul class="skills-img">
                     <li class="skill-img">
-                        <img src="./images/img1.jpg" alt="statistics" width="360" height="300">
+                        <img 
+                        srcset="./images/img1-360.jpg 360w, ./images/img1-720.jpg 720w,"
+                        sizes="360px"
+                        src="./images/img1-360.jpg" alt="statistics" width="360" height="300">
                     </li>
                     <li class="skill-img">
-                        <img src="./images/img2.jpg" alt="support" width="360" height="300">
+                        <img 
+                        srcset="./images/img2-360.jpg 360w, ./images/img2-720.jpg 720w,"
+                        sizes="360px"
+                        src="./images/img2-360.jpg" alt="support" width="360" height="300">
                     </li>
                     <li class="skill-img">
-                        <img src="./images/img3.jpg" alt="adaptivity" width="360" height="300">
+                        <img 
+                        srcset="./images/img3-360.jpg 360w, ./images/img3-720.jpg 720w,"
+                        sizes="360px"
+                        src="./images/img3-360.jpg" alt="adaptivity" width="360" height="300">
                     </li>
                 </ul>
             </div>
@@ -115,7 +192,10 @@
                 <h2 class="section-title">Our Team</h2>
                 <ul class="card-list">
                     <li class="card">
-                        <img src="./images/photo1.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img 
+                        srcset="/images/photo1-264.jpg 264w, /images/photo1-528.jpg 528w,"
+                        sizes="264px"
+                        src="./images/photo1-264.jpg" alt="Mark Guerrero" width="264" height="260">
                         <div class="card-content">
                             <h3 class="card-title">Mark Guerrero</h3>
                             <p class="card-text">Product Designer</p>
@@ -152,7 +232,10 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./images/photo2.jpg" alt="Tom Ford" width="264" height="260">
+                        <img 
+                        srcset="/images/photo2-264.jpg 264w, /images/photo2-528.jpg 528w,"
+                        sizes="264px"
+                        src="./images/photo2-264.jpg" alt="Tom Ford" width="264" height="260">
                         <div class="card-content">
                             <h3 class="card-title">Tom Ford</h3>
                             <p class="card-text">Frontend Developer</p>
@@ -189,7 +272,10 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./images/photo3.jpg" alt="Camila Garcia" width="264" height="260">
+                        <img 
+                        srcset="/images/photo3-264.jpg 264w, /images/photo3-528.jpg 528w,"
+                        sizes="264px"
+                        src="./images/photo3-264.jpg" alt="Camila Garcia" width="264" height="260">
                         <div class="card-content">
                             <h3 class="card-title">Camila Garcia</h3>
                             <p class="card-text">Marketing</p>
@@ -226,7 +312,10 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./images/photo4.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <img 
+                        srcset="/images/photo4-264.jpg 264w, /images/photo4-528.jpg 528w,"
+                        sizes="264px"
+                        src="./images/photo4-264.jpg" alt="Daniel Wilson" width="264" height="260">
                         <div class="card-content">
                             <h3 class="card-title">Daniel Wilson</h3>
                             <p class="card-text">UI Designer</p>
@@ -316,8 +405,8 @@
     </main>
     <footer>
         <div class="container footer">
-            <div>
-                <a href="./index.html"><span class="logo-web">WEB</span><span class="logo-studio-footer">STUDIO</span></a>
+            <div class="logo-box">
+                <a href="./index.html" class="logo-footer"><span class="logo-web">WEB</span><span class="logo-studio-footer">STUDIO</span></a>
                 <p class="footer-text">
                     Increase the flow of customers and sales for your business with digital marketing & growth solutions.
                 </p>
@@ -438,6 +527,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
