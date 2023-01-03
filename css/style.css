@@ -121,6 +121,7 @@ img {
 
 /* Nav */
 .top-line {
+    position: relative;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -886,7 +887,6 @@ footer {
         .mobile-menu.is-open  .mobile-menu-close-btn {
             display: none;
         }
-    
         .mobile-menu-item {
             margin-top: 40px;
             font-weight: 700;
@@ -898,7 +898,7 @@ footer {
         .mobile-menu-item:nth-child(1) {
             margin-top: 0;
         }
-        .link-mobile-menu-item {
+        .link-mobile-menu {
             text-decoration: none;
         }
     
@@ -933,10 +933,7 @@ footer {
             justify-content: center;
         }
     
-        .social-list-item-mobile:not(:last-child) {
-            margin-right: 56px;
-        }
-    
+           
         .socil-list-link-mobile {
             display: flex;
             justify-content: center;
@@ -973,6 +970,40 @@ footer {
             border-radius: 50%;
             background-color: #e7e9fc;
             border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .mobile-menu-close-icon {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            transform: translate(-50% -50%);
+            background: var(--cornflower-color);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        
+            transition-property: background;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .button-close {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--cornflower-color);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            top: 40px;
+            right: 40px;
+
+            transition-property: background;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .button-close:hover,
+        .button-close:focus {
+            cursor: pointer;
+            background: var(--ocean-color);
+            fill: #ffffff;
         }
     /* Section Customers */
     .background-header {
