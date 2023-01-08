@@ -60,7 +60,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
 @media screen and (min-width:428px) {
     .container {
         width: 428px;
@@ -71,13 +70,6 @@ img {
 @media screen and (min-width:768px) {
     .container {
         width: 768px;
-    }
-    .mobile-menu {
-        display: none;
-    }
-        
-    .mobile-menu-open {
-        display: none;
     }
 }
 
@@ -825,6 +817,70 @@ footer {
     background-color: var(--ocean-color);
 }
 
+/* Mobile menu */
+.menu-toggle {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    height: 40px;
+    width: 40px;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (min-width:768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
 @media screen and (max-width:428px) {
 
     /* Section Customers */
@@ -857,7 +913,8 @@ footer {
 
 @media screen and (max-width:768px) {
     /* Mobile menu */
-    .mobile-menu-open {
+
+    /* .mobile-menu-open {
         position: absolute;
             background-color: #FFFFFF;
             border: none;
@@ -1004,7 +1061,7 @@ footer {
             cursor: pointer;
             background: var(--ocean-color);
             fill: #ffffff;
-        }
+        } */
     /* Section Customers */
     .background-header {
         background-color: var(--caption-color);
