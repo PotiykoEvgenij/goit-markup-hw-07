@@ -991,7 +991,7 @@ footer {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     /* Section Customers */
     .background-header {
         background-color: var(--caption-color);
@@ -1286,7 +1286,7 @@ footer {
         display: flex;
     }
 }
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1200px) {
     .bg-icon-direction {
         display: none;
     }
@@ -1518,7 +1518,7 @@ footer {
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .top-line-bg {
         width: 428px;
     }
@@ -1535,16 +1535,50 @@ footer {
     .filter-button {
         padding: 8px 16px;
     }
-    div.container.project-cards-list {
-        padding: 0;
+    .project-cards-list {
+        margin-left: auto;
+        margin-right: auto;
+        width: 396px;
     }
     .project-card {
         width: 396px;
+        height: 400px;
+        margin-bottom: 48px;
     }
 }
 @media screen and (min-width:768px) {
-
+    .filter-buttons {
+        display: flex;
+        width: 586px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .filter {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .project-cards-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 96px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .project-card {
+        width: 356px;
+        margin-bottom: 72px;
+    }
+    .project-card:last-child {
+        margin-bottom: 0;
+    }
+    .project-card:nth-child(2n + 1) {
+        margin-right: 24px;
+    }
+}
+@media screen and (min-width:768px) {}
 /* .filter-buttons {
     display: flex;
     width: 586px;
