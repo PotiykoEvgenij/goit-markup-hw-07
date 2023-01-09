@@ -969,6 +969,10 @@ footer {
     .link-customers a {
         width: 190px;
     }
+    .link-customers:nth-child(-n + 5) {
+        margin-left: 0;
+        margin-bottom: 72px;
+    }
 
     .icon-customers {
         padding: 16px 40px;
@@ -1034,7 +1038,12 @@ footer {
     .link-customers a {
         width: 190px;
     }
-
+    .link-customers:nth-child(-n + 4) {
+        margin-bottom: 72px;
+    }
+    .link-customers:nth-child(2n + 1) {
+        margin-right: 16px;
+    }
     .icon-customers {
         padding: 16px 40px;
         width: 110px;
@@ -1085,7 +1094,7 @@ footer {
     }
 
 }
-@media screen and (min-width:769px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
 
     .background-header {
             background-color: var(--caption-color);
