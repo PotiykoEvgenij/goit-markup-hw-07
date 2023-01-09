@@ -1578,7 +1578,24 @@ footer {
         margin-right: 24px;
     }
 }
-@media screen and (min-width:768px) {}
+@media screen and (min-width:1200px) {
+    .project-cards-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 96px;
+    }
+    .project-card {
+        margin-left: 24px;
+        margin-top: 48px;
+        width: 360px;
+    }
+    .project-card:nth-child(3n + 1) {
+        margin-left: 0;
+    }
+    .project-card:nth-child(-n + 3) {
+        margin-top: 0;
+    }
+}
 /* .filter-buttons {
     display: flex;
     width: 586px;
