@@ -271,7 +271,7 @@ img {
 .card {
     margin-left: auto;
     margin-right: auto;
-    width: 260px;
+    width: 264px;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -1265,22 +1265,22 @@ footer {
         margin-right: 24px;
     }
     .link-customers:nth-child(-n + 3) {
-        padding-bottom: 72px;
+        margin-bottom: 72px;
     }
     /* Footer */
     .footer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
     .logo-box {
         margin: 0;
         width: 264px;
         margin-right: 24px;
+        margin-left: 92px;
     }
     .form-subscribe {
         width: 653px;
-        margin-left: 108px;
+        margin-left: 92px;
     }
     .input-buttom {
         display: flex;
